@@ -1,5 +1,7 @@
 # 个人博客
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6f56c571-a5aa-41d2-a93d-2b83d0f70ea7/deploy-status)](https://app.netlify.com/sites/vuepress-example/deploys)
+
 使用VuePress搭建的个人博客demo。
 
 ## 文件结构简介
