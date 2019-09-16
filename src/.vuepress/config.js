@@ -2,7 +2,7 @@
  * @Author: Mr.Hope
  * @Date: 2019-07-05 00:14:26
  * @LastEditors: Mr.Hope
- * @LastEditTime: 2019-09-16 18:12:17
+ * @LastEditTime: 2019-09-16 21:53:43
  * @Description: Vuepress配置
  */
 
@@ -40,7 +40,8 @@ module.exports = {
     /** 头部导航栏的配置 */
     nav: [
       { text: '主页', link: '/' },
-      { text: '介绍', link: '/about/' },
+      { text: 'Vuepress介绍', link: '/about/' },
+      { text: 'Markdown介绍', link: '/markdown/' },
       { text: 'Github', link: 'https://github.com/nenuyouth/vuepressTemplate' },
     ],
 

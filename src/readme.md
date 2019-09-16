@@ -1,8 +1,9 @@
 ---
 home: true
+title: 博客示例
 heroImage: /logo.png
-heroText: 博客实例
-tagline: 这是一个及其简单的博客实例
+heroText: 博客示例
+tagline: 这是一个Vuepress搭建的博客
 actionText: 了解更多 →
 actionLink: /about
 features:
@@ -14,8 +15,6 @@ features:
   details: VuePress 会为每个页面预渲染生成静态的 HTML，同时，每个页面被加载的时候，将作为 SPA 运行。
 footer: MIT Licensed | Copyright © 2019-present Mr.Hope
 ---
-
-# Blog Demo
 
 ## 像数 1, 2, 3 一样容易
 
@@ -42,3 +41,7 @@ npm run build
 - [Vuepress配置](https://v1.vuepress.vuejs.org/zh/config/)
 - [Vuepress插件](https://v1.vuepress.vuejs.org/zh/plugin/)
 - [Vuepress主题](https://v1.vuepress.vuejs.org/zh/theme/)
+
+## Markdown介绍
+
+- [查看详情](markdown/readme.md)
