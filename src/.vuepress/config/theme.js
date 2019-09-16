@@ -2,7 +2,7 @@
  * @Author: Mr.Hope
  * @Date: 2019-09-16 22:17:34
  * @LastEditors: Mr.Hope
- * @LastEditTime: 2019-09-16 22:22:26
+ * @LastEditTime: 2019-09-16 23:32:14
  * @Description: 主题配置
  */
 
@@ -16,7 +16,22 @@ module.exports = {
   ],
 
   /** 侧边栏配置 */
-  sidebar: 'auto',
+  sidebar: {
+    '/markdown/': [
+      '',     /* /foo/ */
+      'demo',  /* /foo/one.html */
+      'emoji'   /* /foo/two.html */
+    ],
+
+    // fallback
+    '/': [
+      '',        /* / */
+      'about'    /* /about.html */
+    ]
+  },
+
+  /** 侧边栏标题显示深度，0-2 */
+  sidebarDepth: 2,
 
   /** 语言设置 */
   locales: {
@@ -26,7 +41,7 @@ module.exports = {
       lang: 'zh-CN', // 将会被设置为 <html> 的 lang 属性
 
       /** 网站在该语言下的标题 */
-      title: '个人博客',
+      title: '博客示例',
 
       /** 网站在该语言下的描述 */
       description: '基于Vuepress的博客',
@@ -39,7 +54,19 @@ module.exports = {
       ],
 
       /** 网站在该语言下的侧边栏 */
-      sidebar: 'auto',
+      sidebar: {
+        '/markdown/': [
+          '',     /* /foo/ */
+          'demo',  /* /foo/one.html */
+          'emoji'   /* /foo/two.html */
+        ],
+
+        // fallback
+        '/': [
+          '',        /* / */
+          'about'    /* /about.html */
+        ]
+      },
 
       /** 多语言下拉菜单的标题 */
       selectText: '选择语言',
@@ -68,15 +95,26 @@ module.exports = {
     /** 英文 */
     '/en/': {
       lang: 'en-US',
-      title: 'Personal Blog',
+      title: 'Blog DEMO',
       description: 'Vuepress based blog',
       nav: [
         { text: 'Home', link: '/en/' },
         { text: 'Vuepress', link: '/en/about.html' },
         { text: 'Markdown', link: '/en/markdown/' }
       ],
-      sidebar: 'auto',
-      selectText: 'Language',
+      sidebar: {
+        '/en/markdown/': [
+          '',     /* /foo/ */
+          'demo',  /* /foo/one.html */
+          'emoji'   /* /foo/two.html */
+        ],
+
+        // fallback
+        '/en/': [
+          '',        /* / */
+          'about'    /* /about.html */
+        ]
+      }, selectText: 'Language',
       lastUpdated: 'Last update',
       label: 'English',
       editLinkText: 'Edit on Github',

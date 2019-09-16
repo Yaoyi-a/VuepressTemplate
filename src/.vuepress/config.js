@@ -2,7 +2,7 @@
  * @Author: Mr.Hope
  * @Date: 2019-07-05 00:14:26
  * @LastEditors: Mr.Hope
- * @LastEditTime: 2019-09-16 22:24:50
+ * @LastEditTime: 2019-09-16 23:29:38
  * @Description: Vuepress配置
  */
 const themeConfig = require('./config/theme');
@@ -12,7 +12,7 @@ module.exports = {
   base: '/',
 
   /** 网站标题 */
-  title: '个人博客',
+  title: '博客示例',
 
   /** 网站描述 */
   description: '基于Vuepress的博客',
@@ -54,7 +54,7 @@ module.exports = {
       lang: 'zh-CN', // 将会被设置为 <html> 的 lang 属性
 
       /** 网站在该语言下的标题 */
-      title: '个人博客',
+      title: '博客示例',
 
       /** 网站在该语言下的描述 */
       description: '基于Vuepress的博客',
@@ -62,7 +62,7 @@ module.exports = {
     /** 英文设置 */
     '/en/': {
       lang: 'en-US',
-      title: 'Personal Blog',
+      title: 'Blog DEMO',
       description: 'Vuepress based blog',
     }
   },
