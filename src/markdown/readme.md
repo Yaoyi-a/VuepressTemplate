@@ -7,6 +7,7 @@ Markdown具有一系列衍生版本，用于扩展Markdown的功能（如表格�
 ## 用途
 
 Markdown的语法简洁明了、学习容易，而且功能比纯文本更强，因此有很多人用它写博客。世界上最流行的博客平台WordPress和大型CMS如Joomla、Drupal都能很好的支持Markdown。完全采用Markdown编辑器的博客平台有Ghost和Typecho。
+
 用于编写说明文档，并且以“README.md”的文件名保存在软件的目录下面。
 除此之外，由于我们有了RStudio这样的神级编辑器，我们还可以快速将Markdown转化为演讲PPT、Word产品文档、LaTex论文甚至是用非常少量的代码完成最小可用原型。在数据科学领域，Markdown已经广泛使用，极大地推进了动态可重复性研究的历史进程。
 
@@ -30,8 +31,6 @@ Markdown的语法简洁明了、学习容易，而且功能比纯文本更强，
 - H6 :`###### Header 6`
 
 ## 文本样式
-
-（带“*”星号的文本样式，在原版Markdown标准中不存在，但在其大部分衍生标准中被添加）
 
 - 链接 :`[Title](URL)`
 - 加粗 :`**Bold**`

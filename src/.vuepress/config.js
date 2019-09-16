@@ -2,9 +2,10 @@
  * @Author: Mr.Hope
  * @Date: 2019-07-05 00:14:26
  * @LastEditors: Mr.Hope
- * @LastEditTime: 2019-09-16 21:53:43
+ * @LastEditTime: 2019-09-16 22:24:50
  * @Description: Vuepress配置
  */
+const themeConfig = require('./config/theme');
 
 module.exports = {
   /** 部署目录 */
@@ -14,7 +15,7 @@ module.exports = {
   title: '个人博客',
 
   /** 网站描述 */
-  description: 'Vuepress based blog',
+  description: '基于Vuepress的博客',
 
   /** 生成网站头部的标签 */
   head: [
@@ -36,18 +37,7 @@ module.exports = {
   ],
 
   /** 主题配置 */
-  themeConfig: {
-    /** 头部导航栏的配置 */
-    nav: [
-      { text: '主页', link: '/' },
-      { text: 'Vuepress介绍', link: '/about/' },
-      { text: 'Markdown介绍', link: '/markdown/' },
-      { text: 'Github', link: 'https://github.com/nenuyouth/vuepressTemplate' },
-    ],
-
-    /** 侧边栏配置 */
-    sidebar: 'auto',
-  },
+  themeConfig,
 
   /** 构建文件输出目录 */
   dest: 'dist',
@@ -67,6 +57,12 @@ module.exports = {
       title: '个人博客',
 
       /** 网站在该语言下的描述 */
+      description: '基于Vuepress的博客',
+    },
+    /** 英文设置 */
+    '/en/': {
+      lang: 'en-US',
+      title: 'Personal Blog',
       description: 'Vuepress based blog',
     }
   },
