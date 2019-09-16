@@ -6,6 +6,8 @@
 
 使用VuePress搭建的个人博客demo。→ [Demo地址](https://vuepress-example.netlify.com)
 
+[English Version Readme](https://github.com/nenuyouth/VuepressTemplate/blob/master/readme.en-US.md)
+
 ## 文件结构简介
 
 ### src文件夹

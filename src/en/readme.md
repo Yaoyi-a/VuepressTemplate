@@ -44,4 +44,4 @@ npm run build
 
 ## Markdown Intro
 
-- [查看详情](markdown/readme.md)
+- [View Details](markdown/readme.md)
