@@ -1,0 +1,26 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "个人博客",
+  "scripts": {
+    "serve": "vuepress dev src",
+    "cleanServe": "vuepress dev src --no-cache",
+    "build": "vuepress build src",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mr.Hope",
+  "license": "MIT",
+  "dependencies": {
+    "moment": "^2.24.0",
+    "vuepress": "^1.1.0"
+  },
+  "devDependencies": {
+    "@vuepress/plugin-active-header-links": "^1.1.0",
+    "@vuepress/plugin-back-to-top": "^1.1.0",
+    "@vuepress/plugin-medium-zoom": "^1.1.0",
+    "@vuepress/plugin-nprogress": "^1.1.0",
+    "@vuepress/plugin-pwa": "^1.1.0",
+    "@vuepress/plugin-search": "^1.1.0",
+    "eslint": "^6.4.0"
+  }
+}
