@@ -2,7 +2,7 @@
  * @Author: Mr.Hope
  * @Date: 2019-07-05 00:14:26
  * @LastEditors: Mr.Hope
- * @LastEditTime: 2019-09-16 17:47:00
+ * @LastEditTime: 2019-09-16 18:12:17
  * @Description: Vuepress配置
  */
 
@@ -51,9 +51,29 @@ module.exports = {
   /** 构建文件输出目录 */
   dest: 'dist',
 
+  /** 多语言配置选项
+   * 
+   * 键名是该语言所属的子路径
+   * 作为特例，默认语言可以使用 '/' 作为其路径。
+   */
+  locales: {
+    /** 默认语言 */
+    '/': {
+      /** 设置为中文 */
+      lang: 'zh-CN', // 将会被设置为 <html> 的 lang 属性
+
+      /** 网站在该语言下的标题 */
+      title: '个人博客',
+
+      /** 网站在该语言下的描述 */
+      description: 'Vuepress based blog',
+    }
+  },
+
   /** 是否只支持常青树浏览器 */
   evergreen: true, // 设置为true后将不会兼容IE等老旧浏览器
 
+  /** 插件选项 */
   plugins: {
     /** 更新时间插件 */
     '@vuepress/last-updated': {
