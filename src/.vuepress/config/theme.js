@@ -2,7 +2,7 @@
  * @Author: Mr.Hope
  * @Date: 2019-09-16 22:17:34
  * @LastEditors: Mr.Hope
- * @LastEditTime: 2019-09-16 23:32:14
+ * @LastEditTime: 2019-09-16 23:53:28
  * @Description: 主题配置
  */
 
@@ -78,18 +78,7 @@ module.exports = {
       label: '简体中文',
 
       /** 编辑链接文字 */
-      editLinkText: '在 GitHub 上编辑此页',
-
-      // Service Worker 的配置
-      serviceWorker: {
-        /** 更新弹窗 */
-        updatePopup: {
-          /** 更新信息 */
-          message: "发现新内容可用。",
-          /** 按钮文字 */
-          buttonText: "刷新"
-        }
-      }
+      editLinkText: '在 GitHub 上编辑此页'
     },
 
     /** 英文 */
@@ -117,13 +106,7 @@ module.exports = {
       }, selectText: 'Language',
       lastUpdated: 'Last update',
       label: 'English',
-      editLinkText: 'Edit on Github',
-      serviceWorker: {
-        updatePopup: {
-          message: "New content found.",
-          buttonText: "Refresh"
-        }
-      }
+      editLinkText: 'Edit on Github'
     }
   },
 

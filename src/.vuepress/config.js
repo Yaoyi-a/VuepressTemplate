@@ -2,7 +2,7 @@
  * @Author: Mr.Hope
  * @Date: 2019-07-05 00:14:26
  * @LastEditors: Mr.Hope
- * @LastEditTime: 2019-09-16 23:29:38
+ * @LastEditTime: 2019-09-16 23:53:57
  * @Description: Vuepress配置
  */
 const themeConfig = require('./config/theme');
@@ -88,7 +88,16 @@ module.exports = {
       /** 是否注册Service Worker */
       serviceWorker: true,
       /** 是否弹出页面更新提示 */
-      updatePopup: true
+      updatePopup: {
+        '/': {
+          message: "发现新内容可用",
+          buttonText: "刷新"
+        },
+        '/en/': {
+          message: "New content is available.",
+          buttonText: "Refresh"
+        }
+      }
     },
 
     /** 搜索插件 */
