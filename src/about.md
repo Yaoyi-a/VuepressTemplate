@@ -25,12 +25,12 @@ Node.js对整个项目的声明文件，它是Node项目必包含的文件。包
 初期无需掌握用途的文件：
 | 文件              | 内容                      |
 | ----------------- | ------------------------- |
-| .eslintignore     | ESLint忽视的文件          |
+| node_modules      | 存放了项目使用的package   |
+| LICENSE           | 项目许可证文件            |
+| package-lock.json | 项目实际使用的package结构 |
+| .eslintignore     | ESLint忽略的文件          |
 | .eslintrc.js      | ESLint规则配置文件        |
 | .nvmrc            | node版本声明文件          |
-| LICENSE           | 项目许可证文件            |
-| package-lock.json | 项目实际使用package的输出 |
-| node_modules      | 存放了项目使用的package   |
 
 :::tip
 ESLint是一个JS的代码格式与错误提示器。

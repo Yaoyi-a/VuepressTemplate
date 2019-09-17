@@ -37,10 +37,10 @@ npm run build
 
 ## Vuepress Offical Docs
 
-- [Vuepress指南](https://v1.vuepress.vuejs.org/guide/)
-- [Vuepress配置](https://v1.vuepress.vuejs.org/config/)
-- [Vuepress插件](https://v1.vuepress.vuejs.org/plugin/)
-- [Vuepress主题](https://v1.vuepress.vuejs.org/theme/)
+- [Vuepress Gudie](https://v1.vuepress.vuejs.org/guide/)
+- [Vuepress Config](https://v1.vuepress.vuejs.org/config/)
+- [Vuepress Plugins](https://v1.vuepress.vuejs.org/plugin/)
+- [Vuepress Theme](https://v1.vuepress.vuejs.org/theme/)
 
 ## Markdown Intro
 

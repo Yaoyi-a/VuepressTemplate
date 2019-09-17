@@ -2,7 +2,7 @@
  * @Author: Mr.Hope
  * @Date: 2019-09-16 22:17:34
  * @LastEditors: Mr.Hope
- * @LastEditTime: 2019-09-16 23:53:28
+ * @LastEditTime: 2019-09-17 12:39:30
  * @Description: 主题配置
  */
 
@@ -56,15 +56,15 @@ module.exports = {
       /** 网站在该语言下的侧边栏 */
       sidebar: {
         '/markdown/': [
-          '',     /* /foo/ */
-          'demo',  /* /foo/one.html */
-          'emoji'   /* /foo/two.html */
+          '',
+          'demo',
+          'emoji'
         ],
 
         // fallback
         '/': [
-          '',        /* / */
-          'about'    /* /about.html */
+          '',      /* / */
+          'about'  /* /about.html */
         ]
       },
 
@@ -92,18 +92,12 @@ module.exports = {
         { text: 'Markdown', link: '/en/markdown/' }
       ],
       sidebar: {
-        '/en/markdown/': [
-          '',     /* /foo/ */
-          'demo',  /* /foo/one.html */
-          'emoji'   /* /foo/two.html */
-        ],
-
-        // fallback
-        '/en/': [
-          '',        /* / */
-          'about'    /* /about.html */
-        ]
-      }, selectText: 'Language',
+        '/en/markdown/': ['', 'demo', 'emoji'],
+        '/en/': ['', 'about']
+      },
+      selectText: 'Language',
+      /** 辅助标签 */
+      ariaLabel: 'Select language',
       lastUpdated: 'Last update',
       label: 'English',
       editLinkText: 'Edit on Github'

@@ -1,7 +1,7 @@
 {
-  "name": "personal blog",
-  "short_name": "Blog",
-  "description": "个人博客",
+  "name": "博客示例",
+  "short_name": "Blog DEMO",
+  "description": "博客示例",
   "lang": "zh-CN",
   "orientation": "portrait-primary",
   "icons": [
@@ -18,6 +18,6 @@
   ],
   "start_url": "./index.html",
   "display": "standalone",
-  "background_color": "#ffffff",
+  "background_color": "#46bd87",
   "theme_color": "#46bd87"
 }

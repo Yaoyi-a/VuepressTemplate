@@ -2,14 +2,14 @@
  * @Author: Mr.Hope
  * @Date: 2019-07-05 00:14:26
  * @LastEditors: Mr.Hope
- * @LastEditTime: 2019-09-17 12:17:38
+ * @LastEditTime: 2019-09-17 12:40:05
  * @Description: Vuepress配置
  */
 const themeConfig = require('./config/theme');
 
 module.exports = {
   /** 部署目录 */
-  base: process.env.VueVUEPRESS_BASE || '/',
+  base: process.env.VuePress_BASE || '/',
 
   /** 网站标题 */
   title: '博客示例',
@@ -27,11 +27,11 @@ module.exports = {
 
     // pwa相关
     ['link', { rel: 'manifest', href: '/manifest.json' }],
-    ['meta', { name: 'theme-color', content: '#5c92d1' }],
+    ['meta', { name: 'theme-color', content: '#46bd87' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
     ['link', { rel: 'apple-touch-icon', href: '/img/icon/appleIcon152.png' }],
-    ['link', { rel: 'mask-icon', href: '/icons/safari-pinned-tab.svg', color: '#5c92d1' }],
+    ['link', { rel: 'mask-icon', href: '/icons/safari-pinned-tab.svg', color: '#46bd87' }],
     ['meta', { name: 'msapplication-TileImage', content: '/img/icon/msIcon144.png' }],
     ['meta', { name: 'msapplication-TileColor', content: '#ffffff' }]
   ],
