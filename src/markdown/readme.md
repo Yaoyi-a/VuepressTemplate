@@ -54,6 +54,14 @@ e.g:`[Baidu](https://baidu.com)`
 
 e.g:`![This is a title](/img/title.jpg)`.
 
+## 表格
+
+|     居中      |         右对齐 | 左对齐         |
+| :-----------: | -------------: | :------------- |
+| 居中使用`:-:` | 右对齐使用`-:` | 左对齐使用`:-` |
+|       b       |      aaaaaaaaa | aaaa           |
+|       c       |           aaaa | a              |
+
 ## Emoji
 
 `:emoji名称:`

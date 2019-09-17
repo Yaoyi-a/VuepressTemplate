@@ -147,6 +147,16 @@ In codes above, two spaces are behind `at`.
 
 [About page using relative path](../about.md)
 
+```md
+[Home page using absolute path](/en/)
+
+[Home page using relative path](../readme.md)
+
+[About page using absolute path](/en/about)
+
+[About page using relative path](../about.md)
+```
+
 :::tip
 You can alse use these in Vuepress:
 
@@ -220,6 +230,10 @@ For more see [emoji list](emoji.md)
 
 Inline Code: `code`
 
+```md
+Inline Code: `code`
+```
+
 Indented code:
 
     // Some comments
@@ -228,6 +242,8 @@ Indented code:
     line 3 of code
 
 ```
+Indented code:
+
     // Some comments
     line 1 of code
     line 2 of code
@@ -239,6 +255,8 @@ Block code:
 ```
 Sample text here...
 ```
+
+    Block code:
 
     ```
     Sample text here...
@@ -253,6 +271,8 @@ var foo = function (bar) {
 
 console.log(foo(5));
 ```
+
+    Syntax highlighting:
 
     ```js
     var foo = function (bar) {

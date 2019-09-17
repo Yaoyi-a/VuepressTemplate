@@ -157,6 +157,16 @@ title: Markdown示例
 
 [相对路径主页](../about.md)
 
+```md
+[根目录访问主页](/)
+
+[相对路径主页](../readme.md)
+
+[根目录访问关于](/about)
+
+[相对路径主页](../about.md)
+```
+
 :::tip
 Vuepress还兼容如下跳转到主页的写法：
 
@@ -210,7 +220,7 @@ Vuepress还兼容如下跳转到主页的写法：
 更多详见[emoji列表](emoji.md)
 :::
 
-## Tables
+## 表格
 
 |     居中      |         右对齐 | 左对齐         |
 | :-----------: | -------------: | :------------- |
@@ -228,16 +238,22 @@ Vuepress还兼容如下跳转到主页的写法：
 
 ## 代码
 
-行内代码： `code`
+行内代码效果： `code`
 
-缩进代码
+    行内代码效果： `code`
+
+缩进代码：
 
     // Some comments
     line 1 of code
     line 2 of code
     line 3 of code
 
-```
+实际代码：
+
+```md
+缩进代码：
+
     // Some comments
     line 1 of code
     line 2 of code
@@ -249,6 +265,8 @@ Vuepress还兼容如下跳转到主页的写法：
 ```
 Sample text here...
 ```
+
+    块级代码
 
     ```
     Sample text here...
@@ -263,6 +281,8 @@ var foo = function (bar) {
 
 console.log(foo(5));
 ```
+
+    高亮格式：
 
     ```js
     var foo = function (bar) {

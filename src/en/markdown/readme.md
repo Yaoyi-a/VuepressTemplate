@@ -54,6 +54,14 @@ e.g:`[Baidu](https://baidu.com)`
 
 e.g:`![This is a title](/img/title.jpg)`.
 
+## Tables
+
+|           center           |                    right | left                    |
+| :------------------------: | -----------------------: | :---------------------- |
+| For center align use `:-:` | For right align use `-:` | For left align use `:-` |
+|             b              |                aaaaaaaaa | aaaa                    |
+|             c              |                     aaaa | a                       |
+
 ## Emoji
 
 `:emoji name:`
