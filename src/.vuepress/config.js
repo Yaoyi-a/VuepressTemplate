@@ -2,14 +2,14 @@
  * @Author: Mr.Hope
  * @Date: 2019-07-05 00:14:26
  * @LastEditors: Mr.Hope
- * @LastEditTime: 2019-09-16 23:53:57
+ * @LastEditTime: 2019-09-17 12:17:38
  * @Description: Vuepress配置
  */
 const themeConfig = require('./config/theme');
 
 module.exports = {
   /** 部署目录 */
-  base: '/',
+  base: process.env.VueVUEPRESS_BASE || '/',
 
   /** 网站标题 */
   title: '博客示例',
