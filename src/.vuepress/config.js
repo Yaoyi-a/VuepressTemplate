@@ -2,10 +2,10 @@
  * @Author: Mr.Hope
  * @Date: 2019-07-05 00:14:26
  * @LastEditors: Mr.Hope
- * @LastEditTime: 2019-09-17 12:40:05
+ * @LastEditTime: 2019-09-17 12:51:34
  * @Description: Vuepress配置
  */
-const themeConfig = require('./config/theme');
+const themeConfig = require('./theme');
 
 module.exports = {
   /** 部署目录 */

@@ -2,7 +2,7 @@
  * @Author: Mr.Hope
  * @Date: 2019-09-16 22:17:34
  * @LastEditors: Mr.Hope
- * @LastEditTime: 2019-09-17 12:39:30
+ * @LastEditTime: 2019-09-17 12:53:03
  * @Description: 主题配置
  */
 
@@ -107,9 +107,11 @@ module.exports = {
   /** repo地址 */
   repo: 'https://github.com/nenuyouth/VuepressTemplate',
 
+  /** 文档目录 */
+  docsDir: 'src',
+
   /** 自定义仓库链接文字 */
   repoLabel: 'Github',
-
   /** 开启编辑此页链接 */
   editLinks: true, // 默认是 false, 设置为 true 来启用
 
