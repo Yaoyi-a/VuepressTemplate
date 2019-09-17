@@ -2,7 +2,7 @@
  * @Author: Mr.Hope
  * @Date: 2019-07-05 00:14:26
  * @LastEditors: Mr.Hope
- * @LastEditTime: 2019-09-17 12:51:34
+ * @LastEditTime: 2019-09-17 12:58:58
  * @Description: Vuepress配置
  */
 const themeConfig = require('./theme');
@@ -24,6 +24,12 @@ module.exports = {
 
     // 设置网站作者
     ['meta', { name: 'author', content: 'Mr.Hope' }],
+
+    // 移动端App体验
+    ['meta', {
+      name: 'viewport',
+      content: 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover'
+    }],
 
     // pwa相关
     ['link', { rel: 'manifest', href: '/manifest.json' }],
