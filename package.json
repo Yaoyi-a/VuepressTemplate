@@ -6,7 +6,7 @@
     "serve": "vuepress dev src",
     "cleanServe": "vuepress dev src --no-cache",
     "build": "vuepress build src",
-    "buildGithub": "VuePress_BASE=/VuepressTemplate/ vuepress build src",
+    "build-with-base": "VuePress_BASE=/VuepressTemplate/ vuepress build src",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Mr.Hope",
