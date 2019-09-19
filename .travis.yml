@@ -9,7 +9,7 @@ deploy:
   provider: pages
   skip-cleanup: true
   local_dir: dist
-  github-token: $
+  github-token: $Github_Token
   # keep-history: true
   on:
     branch: master
