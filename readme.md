@@ -40,6 +40,7 @@ Node.js对整个项目的声明文件，它是Node项目必包含的文件。包
 | LICENSE           | 项目许可证文件            |
 | package-lock.json | 项目实际使用package的输出 |
 | node_modules      | 存放了项目使用的package   |
+| .travis.yml       | Travis CI配置文件         |
 
 > ESLint是一个JS的代码格式与错误提示器。
 >
