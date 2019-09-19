@@ -31,6 +31,7 @@ Node.js对整个项目的声明文件，它是Node项目必包含的文件。包
 | .eslintignore     | ESLint忽略的文件          |
 | .eslintrc.js      | ESLint规则配置文件        |
 | .nvmrc            | node版本声明文件          |
+| .travis.yml       | Travis CI配置文件         |
 
 :::tip
 ESLint是一个JS的代码格式与错误提示器。
@@ -141,3 +142,7 @@ npm run build
 - 案例三
   
   [Vue gallexy](https://vuepress.gallery/)
+
+## 第三方主题
+
+- [vuepress-theme-reco](https://vuepress-theme-reco.recoluan.com/)

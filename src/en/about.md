@@ -24,7 +24,7 @@ Project documentation on Github.
 
 File that do not need to be understand at the beginning:
 
-| Files         | Content                                                        |
+| Files             | Content                                                        |
 | ----------------- | -------------------------------------------------------------- |
 | node_modules      | Stored the package used by the project                         |
 | LICENSE           | Project license document                                       |
@@ -32,6 +32,7 @@ File that do not need to be understand at the beginning:
 | .eslintignore     | Files ignored by ESLint                                        |
 | .eslintrc.js      | ESLint rule configuration file                                 |
 | .nvmrc            | Node version declaration file of the environment               |
+| .travis.yml       | Travis CI Config file                                          |
 
 :::tip
 ESLint is a JS code linter.
@@ -115,6 +116,10 @@ Open local develope environment, please visit[localhost:8080](http://localhost:8
 npm run serve
 ```
 
+:::tip
+Use `Ctrl + C` to stop local dev process.
+:::
+
 ### Build project
 
 Generate the files that will eventually be deployed to the server.
@@ -138,3 +143,7 @@ npm run build
 - Case 3
   
   [Vue gallexy](https://vuepress.gallery/)
+
+## ThirdParty Theme
+
+- [vuepress-theme-reco](https://vuepress-theme-reco.recoluan.com/)
