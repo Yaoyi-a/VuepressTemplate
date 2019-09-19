@@ -2,7 +2,7 @@
  * @Author: Mr.Hope
  * @Date: 2019-07-05 00:14:26
  * @LastEditors: Mr.Hope
- * @LastEditTime: 2019-09-17 12:58:58
+ * @LastEditTime: 2019-09-19 11:24:37
  * @Description: Vuepress配置
  */
 const themeConfig = require('./theme');
@@ -42,8 +42,9 @@ module.exports = {
     ['meta', { name: 'msapplication-TileColor', content: '#ffffff' }]
   ],
 
-  /** 主题配置 */
-  themeConfig,
+  // host: '0.0.0.0',
+  // port:8080,
+  // temp: './dist/temp',
 
   /** 构建文件输出目录 */
   dest: 'dist',
@@ -71,6 +72,17 @@ module.exports = {
       title: 'Blog DEMO',
       description: 'Vuepress based blog',
     }
+  },
+
+  /** 使用的主题 */
+  // theme: '@vuepress/theme-default',
+
+  /** 主题配置 */
+  themeConfig,
+
+  /** markdown-it的配置 */
+  markdown: {
+    linenumber: true
   },
 
   /** 是否只支持常青树浏览器 */
@@ -125,10 +137,13 @@ module.exports = {
     '@vuepress/medium-zoom': {
       // selector: 'img.zoom-custom-imgs',
 
-      // medium-zoom options here
-      // See: https://github.com/francoischalifour/medium-zoom#options
       options: {
-        margin: 16
+        /** 缩放后图片的外间距 */
+        margin: 16,
+        /** 缩放背景 */
+        background: '#fff',
+        /** 关闭缩放需要滚动的像素数 */
+        scrollOffset: 40
       }
     }
   }
