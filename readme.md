@@ -1,10 +1,11 @@
 # 个人博客
 
 [![作者：Mr.Hope](https://img.shields.io/badge/作者-Mr.Hope-blue.svg)](https://mrhope.nenuyouth.com)
+[![License: MIT](https://img.shields.io/badge/License-MIT-success.svg)](https://mrhope.nenuyouth.com)
 [![Travis CI](https://travis-ci.com/nenuyouth/VuepressTemplate.svg?branch=master)](https://travis-ci.com/nenuyouth/VuepressTemplate)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/6f56c571-a5aa-41d2-a93d-2b83d0f70ea7/deploy-status)](https://app.netlify.com/sites/vuepress-example/deploys)
 
-使用VuePress搭建的个人博客demo。→ [Github Pages](https://vuepress.nenuyouth.com/) | [Netlify](https://vuepress-example.netlify.com)
+使用VuePress搭建的个人博客demo。→ [点击前往](https://vuepress.nenuyouth.com/) | [备用地址](https://vuepress-example.netlify.com)
 
 [English Version Readme](https://github.com/nenuyouth/VuepressTemplate/blob/master/readme.en-US.md)
 

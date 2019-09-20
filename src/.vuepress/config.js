@@ -2,10 +2,9 @@
  * @Author: Mr.Hope
  * @Date: 2019-07-05 00:14:26
  * @LastEditors: Mr.Hope
- * @LastEditTime: 2019-09-19 11:24:37
+ * @LastEditTime: 2019-09-20 19:15:24
  * @Description: Vuepress配置
  */
-const themeConfig = require('./theme');
 
 module.exports = {
   /** 部署目录 */
@@ -78,7 +77,98 @@ module.exports = {
   // theme: '@vuepress/theme-default',
 
   /** 主题配置 */
-  themeConfig,
+  themeConfig: {
+    /** 头部导航栏的配置 */
+    nav: [
+      { text: '主页', link: '/' },
+      { text: 'Vuepress介绍', link: '/about.html' },
+      { text: 'Markdown介绍', link: '/markdown/' }
+    ],
+
+    /** 侧边栏配置 */
+    sidebar: {
+      '/markdown/': [
+        '',
+        'demo',
+        'emoji'
+      ],
+
+      // fallback
+      '/': [
+        '',        /* / */
+        'about'    /* /about.html */
+      ]
+    },
+
+    /** 侧边栏标题显示深度，0-2 */
+    sidebarDepth: 2,
+
+    /** 语言设置 */
+    locales: {
+      /** 默认语言 */
+      '/': {
+        lang: 'zh-CN',
+        selectText: '选择语言',
+        lastUpdated: '上次编辑时间',
+        label: '简体中文'
+      },
+
+      /** 英文设置 */
+      '/en/': {
+        /** 设置该语言的代码 */
+        lang: 'en-US', // 将会被设置为 <html> 的 lang 属性
+
+        /** 网站在该语言下的标题 */
+        title: 'Blog DEMO',
+
+        /** 网站在该语言下的描述 */
+        description: 'Vuepress based blog',
+
+        /** 该语言下头部导航栏的配置 */
+        nav: [
+          { text: 'Home', link: '/en/' },
+          { text: 'Vuepress', link: '/en/about.html' },
+          { text: 'Markdown', link: '/en/markdown/' }
+        ],
+
+        /** 网站在该语言下的侧边栏 */
+        sidebar: {
+          '/en/markdown/': ['', 'demo', 'emoji'],
+          '/en/': ['', 'about']
+        },
+
+        /** 多语言下拉菜单的标题 */
+        selectText: 'Language',
+
+        /** 辅助标签 */
+        ariaLabel: 'Select language',
+
+        /** 该语言下的更新时间文字 */
+        lastUpdated: 'Last update',
+
+        /** 该语言在下拉菜单中的标签 */
+        label: 'English',
+
+        /** 编辑链接文字 */
+        editLinkText: 'Edit on Github'
+      }
+    },
+
+    /** repo地址 */
+    repo: 'https://github.com/nenuyouth/VuepressTemplate',
+
+    /** 文档目录 */
+    docsDir: 'src',
+
+    /** 自定义仓库链接文字 */
+    repoLabel: 'Github',
+
+    /** 开启编辑此页链接 */
+    editLinks: true, // 默认是 false, 设置为 true 来启用
+
+    /** 编辑此页链接提示文字 */
+    editLinkText: '在 GitHub 上编辑此页' // 默认为 "Edit this page"
+  },
 
   /** markdown-it的配置 */
   markdown: {
@@ -89,9 +179,25 @@ module.exports = {
   evergreen: true, // 设置为true后将不会兼容IE等老旧浏览器
 
   /** 插件选项 */
-  plugins: {
+  plugins: [
+    /** 自定义容器配置 */
+    ['container', {
+      type: 'warning',
+      defaultTitle: {
+        '/': '注意',
+        '/en/': 'Caution'
+      }
+    }],
+    ['container', {
+      type: 'danger',
+      defaultTitle: {
+        '/': '警告',
+        '/en/': 'Warning'
+      }
+    }],
+
     /** 更新时间插件 */
-    '@vuepress/last-updated': {
+    ['@vuepress/last-updated', {
       /** 转换时间戳 */
       transformer: (timestamp, lang) => {
         const moment = require('moment');
@@ -99,10 +205,10 @@ module.exports = {
         moment.locale(lang);
         return moment(timestamp).fromNow();
       }
-    },
+    }],
 
     /** PWA 插件 */
-    '@vuepress/pwa': {
+    ['@vuepress/pwa', {
       /** 是否注册Service Worker */
       serviceWorker: true,
       /** 是否弹出页面更新提示 */
@@ -116,27 +222,26 @@ module.exports = {
           buttonText: "Refresh"
         }
       }
-    },
+    }],
 
     /** 搜索插件 */
-    '@vuepress/search': {
+    ['@vuepress/search', {
       /** 搜索展示数量 */
       searchMaxSuggestions: 10
-    },
+    }],
 
     /** 进度条插件 */
-    '@vuepress/nprogress': true,
-
-    /** 返回顶部 */
-    '@vuepress/back-to-top': true,
+    ['@vuepress/nprogress'],
 
     /** 页面滚动时自动激活侧边栏链接的插件 */
-    '@vuepress/active-header-links': true,
+    ['@vuepress/active-header-links'],
 
     /** 图片缩放插件 */
-    '@vuepress/medium-zoom': {
+    ['@vuepress/medium-zoom', {
+      /** 图片选择器 */
       // selector: 'img.zoom-custom-imgs',
 
+      /** 设置选项 */
       options: {
         /** 缩放后图片的外间距 */
         margin: 16,
@@ -145,6 +250,9 @@ module.exports = {
         /** 关闭缩放需要滚动的像素数 */
         scrollOffset: 40
       }
-    }
-  }
+    }],
+
+    /** chunk命名 */
+    ['named-chunks']
+  ]
 };
