@@ -27,11 +27,11 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "86867792e58b12e216f52696cb39f987"
+    "revision": "247ba5c52dde441eb3271e44a68e9fcd"
   },
   {
     "url": "about.html",
-    "revision": "616bfc6e210a218437e936745c10350e"
+    "revision": "8d114ce9270b23c78b60996e3449ccf0"
   },
   {
     "url": "assets/css/0.styles.182c5980.css",
@@ -46,8 +46,8 @@ self.__precacheManifest = [
     "revision": "222128e7d37afde17d945b06018f7409"
   },
   {
-    "url": "assets/js/13.f95442b1.js",
-    "revision": "50084727df51e6dc043fa55c36c93e53"
+    "url": "assets/js/13.7bc2efa3.js",
+    "revision": "5b0379d3dfc1e46063d945018eb1cd55"
   },
   {
     "url": "assets/js/14.7237d81b.js",
@@ -66,8 +66,8 @@ self.__precacheManifest = [
     "revision": "44ee5eb098dd27303945c020fd3d399a"
   },
   {
-    "url": "assets/js/app.e17f6b18.js",
-    "revision": "b9360da8a5cdb9dce932b504e585b658"
+    "url": "assets/js/app.f395879e.js",
+    "revision": "d1067a8d869ca473bb513d3fbc86d39f"
   },
   {
     "url": "assets/js/page-036b4608.ef395a49.js",
@@ -111,23 +111,23 @@ self.__precacheManifest = [
   },
   {
     "url": "en/about.html",
-    "revision": "bded8efc9d2e6852398e56079f74d9e5"
+    "revision": "e2ee941df4df811c1448110c745990ef"
   },
   {
     "url": "en/index.html",
-    "revision": "18fb668c7f3885adb2f75f08f959d93b"
+    "revision": "9ccdd7f018f050809df3dfb13db10de2"
   },
   {
     "url": "en/markdown/demo.html",
-    "revision": "7d119e158ff1204ea0792c0fcb5819a1"
+    "revision": "8e88096e8cb6cf0c603d80092965e606"
   },
   {
     "url": "en/markdown/emoji.html",
-    "revision": "ec9253f5a73f6799863dd8f678907cbe"
+    "revision": "ee2b5a78133500aba528ab0d51913e5a"
   },
   {
     "url": "en/markdown/index.html",
-    "revision": "8d9b85df32a27176e1f645289e8a8452"
+    "revision": "b94b3bde8e43ed0bb6238e00fc249868"
   },
   {
     "url": "img/icon/appleIcon152.png",
@@ -147,7 +147,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "07aa805c300cf4b3191b8207680bee31"
+    "revision": "7cde3bbec4ed1b0345280db5b3330b17"
   },
   {
     "url": "logo.png",
@@ -155,15 +155,15 @@ self.__precacheManifest = [
   },
   {
     "url": "markdown/demo.html",
-    "revision": "e95454f5da287ce8b8e99c469ea07bce"
+    "revision": "4b551896fc5231c16f92c0ae4d7f4471"
   },
   {
     "url": "markdown/emoji.html",
-    "revision": "92455ab610813c11c2e3fd5aa59bdbdb"
+    "revision": "a44b74a97f68bfa82cd37c3fd415bc91"
   },
   {
     "url": "markdown/index.html",
-    "revision": "32c42de30a24311b2a6b0164e85a8c6d"
+    "revision": "1b614afbfc5585a18162fe523ba4004b"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
