@@ -1,4 +1,4 @@
-# 个人博客
+# Vuepress博客模板
 
 [![作者：Mr.Hope](https://img.shields.io/badge/作者-Mr.Hope-blue.svg)](https://mrhope.nenuyouth.com)
 [![License: MIT](https://img.shields.io/badge/License-MIT-success.svg)](https://mrhope.nenuyouth.com)

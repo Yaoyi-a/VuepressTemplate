@@ -2,7 +2,7 @@
  * @Author: Mr.Hope
  * @Date: 2019-09-19 11:01:50
  * @LastEditors: Mr.Hope
- * @LastEditTime: 2019-09-20 19:26:10
+ * @LastEditTime: 2019-09-20 22:31:12
  * @Description: 主题配置
  */
 const path = require('path')
@@ -23,6 +23,7 @@ module.exports = (options, ctx) => ({
         : path.resolve(__dirname, 'noopModule.js')
     }
   },
+
   /** 继承默认主题 */
   extend: '@vuepress/theme-default',
 

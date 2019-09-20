@@ -27,7 +27,7 @@
       <AlgoliaSearchBox :options="algolia" v-if="isAlgoliaSearch" />
       <SearchBox
         v-else-if="$site.themeConfig.search !== false && $page.frontmatter.search !== false"
-      />
+      />aaa
       <NavLinks class="can-hide" />
     </div>
   </header>
@@ -43,26 +43,21 @@ import ScreenFull from '@theme/components/ScreenFull.vue';
 export default {
   components: { SidebarButton, NavLinks, ScreenFull, SearchBox, AlgoliaSearchBox },
 
-  data() {
-    return {
-      linksWrapMaxWidth: null
-    }
-  },
+  data: () => ({
+    linksWrapMaxWidth: null
+  }),
 
   mounted() {
-    console.log('mounted');
-    const MOBILE_DESKTOP_BREAKPOINT = 719 // refer to config.styl
-    const NAVBAR_VERTICAL_PADDING = parseInt(css(this.$el, 'paddingLeft')) + parseInt(css(this.$el, 'paddingRight'))
+    const MOBILE_DESKTOP_BREAKPOINT = 719; // refer to config.styl
+    const NAVBAR_VERTICAL_PADDING = parseInt(css(this.$el, 'paddingLeft')) + parseInt(css(this.$el, 'paddingRight'));
     const handleLinksWrapWidth = () => {
-      if (document.documentElement.clientWidth < MOBILE_DESKTOP_BREAKPOINT) {
+      if (document.documentElement.clientWidth < MOBILE_DESKTOP_BREAKPOINT)
         this.linksWrapMaxWidth = null
-      } else {
-        this.linksWrapMaxWidth = this.$el.offsetWidth - NAVBAR_VERTICAL_PADDING
-          - (this.$refs.siteName && this.$refs.siteName.offsetWidth || 0)
-      }
+      else this.linksWrapMaxWidth =
+        this.$el.offsetWidth - NAVBAR_VERTICAL_PADDING - (this.$refs.siteName && this.$refs.siteName.offsetWidth || 0)
     }
-    handleLinksWrapWidth()
-    window.addEventListener('resize', handleLinksWrapWidth, false)
+    handleLinksWrapWidth();
+    window.addEventListener('resize', handleLinksWrapWidth, false);
   },
 
   computed: {
@@ -71,7 +66,7 @@ export default {
     },
 
     isAlgoliaSearch() {
-      return this.algolia && this.algolia.apiKey && this.algolia.indexName
+      return this.algolia && this.algolia.apiKey && this.algolia.indexName;
     }
   }
 }
