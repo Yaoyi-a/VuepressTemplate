@@ -27,7 +27,7 @@
       <AlgoliaSearchBox :options="algolia" v-if="isAlgoliaSearch" />
       <SearchBox
         v-else-if="$site.themeConfig.search !== false && $page.frontmatter.search !== false"
-      />aaa
+      />
       <NavLinks class="can-hide" />
     </div>
   </header>
