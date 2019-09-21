@@ -5,7 +5,7 @@ heroImage: /logo.png
 heroText: 博客示例
 tagline: 这是一个Vuepress搭建的博客
 actionText: 了解更多 →
-actionLink: /about
+actionLink: /vuepress/
 features:
 - title: 简洁至上
   details: Vue 驱动的静态网站生成器，以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。

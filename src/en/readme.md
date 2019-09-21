@@ -5,7 +5,7 @@ heroImage: /logo.png
 heroText: Blog Demo
 tagline: This is a blog built on Vuepress.
 actionText: Learn more →
-actionLink: /en/about
+actionLink: /en/vuepress/
 features:
 - title: Simplicity First
   details: Vue-powered Static Site Generator. Minimal setup with markdown-centered project structure helps you focus on writing.

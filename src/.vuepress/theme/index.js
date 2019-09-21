@@ -2,7 +2,7 @@
  * @Author: Mr.Hope
  * @Date: 2019-09-19 11:01:50
  * @LastEditors: Mr.Hope
- * @LastEditTime: 2019-09-20 22:31:12
+ * @LastEditTime: 2019-09-21 14:38:01
  * @Description: 主题配置
  */
 const path = require('path')
@@ -28,5 +28,11 @@ module.exports = (options, ctx) => ({
   extend: '@vuepress/theme-default',
 
   /** 插件选项 */
-  plugins: []
+  plugins: [
+    /** 页面滚动时自动激活侧边栏链接的插件，已由theme-default激活 */
+    // '@vuepress/active-header-links',
+
+    /** 进度条插件，已由theme-default激活 */
+    // '@vuepress/nprogress'
+  ]
 });

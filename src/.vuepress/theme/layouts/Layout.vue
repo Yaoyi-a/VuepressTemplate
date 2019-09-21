@@ -108,6 +108,3 @@ export default {
   }
 }
 </script>
-<style>
-@import '//at.alicdn.com/t/font_1426813_lriac4r0srs.css';
-</style>

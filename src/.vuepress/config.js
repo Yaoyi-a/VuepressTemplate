@@ -2,7 +2,7 @@
  * @Author: Mr.Hope
  * @Date: 2019-07-05 00:14:26
  * @LastEditors: Mr.Hope
- * @LastEditTime: 2019-09-20 20:04:46
+ * @LastEditTime: 2019-09-21 14:44:04
  * @Description: Vuepress配置
  */
 
@@ -95,10 +95,17 @@ module.exports = {
   plugins: [
     /** 自定义容器配置 */
     ['container', {
+      type: 'tip',
+      defaultTitle: {
+        '/': '提示',
+        '/en/': 'Tips'
+      }
+    }],
+    ['container', {
       type: 'warning',
       defaultTitle: {
         '/': '注意',
-        '/en/': 'Caution'
+        '/en/': 'Note'
       }
     }],
     ['container', {
@@ -142,12 +149,6 @@ module.exports = {
       /** 搜索展示数量 */
       searchMaxSuggestions: 10
     }],
-
-    /** 进度条插件 */
-    ['@vuepress/nprogress'],
-
-    /** 页面滚动时自动激活侧边栏链接的插件 */
-    ['@vuepress/active-header-links'],
 
     /** 图片缩放插件 */
     ['@vuepress/medium-zoom', {

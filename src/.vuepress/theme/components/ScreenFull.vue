@@ -2,7 +2,7 @@
  * @Author: Mr.Hope
  * @Date: 2019-09-20 19:03:02
  * @LastEditors: Mr.Hope
- * @LastEditTime: 2019-09-20 19:47:55
+ * @LastEditTime: 2019-09-21 14:18:53
  * @Description: 全屏组件
 -->
 <template>
@@ -53,7 +53,17 @@ export default {
   margin-right: 1em;
 
   .iconfont {
-    font-size: 1.4rem;
+    font-size: 1.3em;
+    color: #aaa;
+  }
+
+  .iconfont:hover {
+    transition: font-size 0.5s;
+    font-size: 1.4em;
+    cursor: pointer;
+  }
+
+  .icon-cacelFullScreen {
     color: $accentColor;
   }
 }
