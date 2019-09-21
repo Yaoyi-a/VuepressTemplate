@@ -35,13 +35,6 @@ npm run serve
 npm run build
 ```
 
-## Vuepress Offical Docs
-
-- [Vuepress Gudie](https://v1.vuepress.vuejs.org/guide/)
-- [Vuepress Config](https://v1.vuepress.vuejs.org/config/)
-- [Vuepress Plugins](https://v1.vuepress.vuejs.org/plugin/)
-- [Vuepress Theme](https://v1.vuepress.vuejs.org/theme/)
-
 ## Markdown Intro
 
 - [View Details](markdown/readme.md)

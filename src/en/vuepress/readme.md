@@ -1,25 +1,15 @@
 # About Vuepress
 
+## Vuepress Offical Docs
+
+- [Vuepress Gudie](https://v1.vuepress.vuejs.org/guide/)
+- [Vuepress Config](https://v1.vuepress.vuejs.org/config/)
+- [Vuepress Plugins](https://v1.vuepress.vuejs.org/plugin/)
+- [Vuepress Theme](https://v1.vuepress.vuejs.org/theme/)
+
+## Vuepress Intro
+
 - [File Stucture](file.md)
 - [Plugins](plugin.md)
 - [Commands](command.md)
-
-## Cases
-
-- Case 1
-
-  [Blog Address](http://dong4j.info/)
-  [Source Code](https://github.com/dong4j/blog-resources)
-
-- Case 2
-
-  [Blog Address](https://davidangel.net/)
-  [Source Code](https://github.com/davidangel/davidangel-vuepress)
-
-- Case 3
-  
-  [Vue gallexy](https://vuepress.gallery/)
-
-## ThirdParty Theme
-
-- [vuepress-theme-reco](https://vuepress-theme-reco.recoluan.com/)
+- [Cases](case.md)

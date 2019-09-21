@@ -145,3 +145,21 @@ module.exports = {
 :::tip
 具体用法详见：[Vuepress插件](https://v1.vuepress.vuejs.org/zh/plugin/)
 :::
+
+## 社区插件
+
+- [clean-urls](https://vuepress.github.io/zh/plugins/clean-urls.html): 在 VuePress 中使用简洁链接
+- [container](https://vuepress.github.io/zh/plugins/container.html): 在 VuePress 中使用 markdown 容器
+- [copyright](https://vuepress.github.io/zh/plugins/copyright.html): 在 VuePress 中处理复制行为
+- [dehydrate](https://vuepress.github.io/zh/plugins/dehydrate.html): 修改 VuePress 生成的 HTML 文件
+- [git-log](https://vuepress.github.io/zh/plugins/git-log.html): 在 VuePress 中整合 git 日志
+- [mathjax](https://vuepress.github.io/zh/plugins/mathjax.html): 在 VuePress 中使用 TeX 语法
+- [migrate](https://vuepress.github.io/zh/plugins/migrate.html): 从其他网站迁移到 VuePress
+- [named-chunks](https://vuepress.github.io/zh/plugins/named-chunks.html): 在 VuePress 中使用命名模块
+- [redirect](https://vuepress.github.io/zh/plugins/redirect.html): 在 VuePress 中处理重定向
+- [serve](https://vuepress.github.io/zh/plugins/serve.html): 在本地构建静态 VuePress 服务器
+- [zooming](https://vuepress.github.io/zh/plugins/zooming.html): 使 VuePress 中的图片支持缩放（使用 zooming）
+
+:::tip
+文档详见：[Vuepress社区](https://vuepress.github.io/zh/)
+:::

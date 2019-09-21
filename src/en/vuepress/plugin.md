@@ -132,16 +132,34 @@ module.exports = {
 
 ## Official Plugins
 
-- [active-header-links](https://v1.vuepress.vuejs.org/zh/plugin/official/plugin-active-header-links.html): A plugin of automatically activating sidebar links when page scrolls
-- [back-to-top](https://v1.vuepress.vuejs.org/zh/plugin/official/plugin-back-to-top.html): Add the Back-to-top button
-- [google-analytics](https://v1.vuepress.vuejs.org/zh/plugin/official/plugin-google-analytics.html)：Add Google analytics
-- [last-updated](https://v1.vuepress.vuejs.org/zh/plugin/official/plugin-last-updated.html): Update last edit time
-- [medium-zoom](https://v1.vuepress.vuejs.org/zh/plugin/official/plugin-medium-zoom.html): Picture Zoom
-- [nprogress](https://v1.vuepress.vuejs.org/zh/plugin/official/plugin-nprogress.html): A progress bar plugin based on nprogress
-- [PWA](https://v1.vuepress.vuejs.org/zh/plugin/official/plugin-pwa.html): Surport for **Progressive Web App**
-- [register-component](https://v1.vuepress.vuejs.org/zh/plugin/official/plugin-register-components.html): register components
-- [search](https://v1.vuepress.vuejs.org/zh/plugin/official/plugin-search.html): Headers-based search plugin
+- [active-header-links](https://v1.vuepress.vuejs.org/plugin/official/plugin-active-header-links.html): A plugin of automatically activating sidebar links when page scrolls
+- [back-to-top](https://v1.vuepress.vuejs.org/plugin/official/plugin-back-to-top.html): Add the Back-to-top button
+- [google-analytics](https://v1.vuepress.vuejs.org/plugin/official/plugin-google-analytics.html)：Add Google analytics
+- [last-updated](https://v1.vuepress.vuejs.org/plugin/official/plugin-last-updated.html): Update last edit time
+- [medium-zoom](https://v1.vuepress.vuejs.org/plugin/official/plugin-medium-zoom.html): Picture Zoom
+- [nprogress](https://v1.vuepress.vuejs.org/plugin/official/plugin-nprogress.html): A progress bar plugin based on nprogress
+- [PWA](https://v1.vuepress.vuejs.org/plugin/official/plugin-pwa.html): Surport for **Progressive Web App**
+- [register-component](https://v1.vuepress.vuejs.org/plugin/official/plugin-register-components.html): register components
+- [search](https://v1.vuepress.vuejs.org/plugin/official/plugin-search.html): Headers-based search plugin
 
 :::tip
 More configuration, please view[Vuepress Plugins](https://v1.vuepress.vuejs.org/plugin/)
+:::
+
+## Community Plugins
+
+- [clean-urls](https://vuepress.github.io/en/plugins/clean-urls.html): Use clean urls in VuePress
+- [container](https://vuepress.github.io/en/plugins/container.html): Use markdown containers in VuePress
+- [copyright](https://vuepress.github.io/en/plugins/copyright.html): 在 VuePress 中处理复制行为
+- [dehydrate](https://vuepress.github.io/en/plugins/dehydrate.html): Dehydrate HTML files in VuePress
+- [git-log](https://vuepress.github.io/en/plugins/git-log.html): Integrate git logs into VuePress
+- [mathjax](https://vuepress.github.io/en/plugins/mathjax.html): Use TeX syntax in VuePress
+- [migrate](https://vuepress.github.io/en/plugins/migrate.html): Migrate another website to VuePress
+- [named-chunks](https://vuepress.github.io/en/plugins/named-chunks.html): Generate named chunks in VuePress
+- [redirect](https://vuepress.github.io/en/plugins/redirect.html): Handle redirections in VuePress
+- [serve](https://vuepress.github.io/en/plugins/serve.html): Serve generated files in VuePress
+- [zooming](https://vuepress.github.io/en/plugins/zooming.html): Make images zoomable in VuePress (with zooming)
+
+:::tip
+For more infomation, please visit [Vuepress Community](https://vuepress.github.io/en/)
 :::

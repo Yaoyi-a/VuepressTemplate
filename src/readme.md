@@ -35,13 +35,6 @@ npm run serve
 npm run build
 ```
 
-## Vuepress官方文档
-
-- [Vuepress指南](https://v1.vuepress.vuejs.org/zh/guide/)
-- [Vuepress配置](https://v1.vuepress.vuejs.org/zh/config/)
-- [Vuepress插件](https://v1.vuepress.vuejs.org/zh/plugin/)
-- [Vuepress主题](https://v1.vuepress.vuejs.org/zh/theme/)
-
 ## Markdown介绍
 
 - [查看详情](markdown/readme.md)
