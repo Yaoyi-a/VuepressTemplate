@@ -2,7 +2,7 @@
  * @Author: Mr.Hope
  * @Date: 2019-09-20 19:39:33
  * @LastEditors: Mr.Hope
- * @LastEditTime: 2019-09-21 15:05:43
+ * @LastEditTime: 2019-09-21 17:35:53
  * @Description: 主题配置文件
  */
 
@@ -16,7 +16,7 @@ module.exports = {
 
   /** 侧边栏配置 */
   sidebar: {
-    '/vuepress/': ['', 'file', 'plugin', 'command', 'case'],
+    '/vuepress/': ['', 'file', 'plugin', 'theme/', 'command', 'case'],
 
     '/markdown/': ['', 'demo', 'emoji'],
 
@@ -61,7 +61,7 @@ module.exports = {
 
       /** 网站在该语言下的侧边栏 */
       sidebar: {
-        '/en/vuepress/': ['', 'file', 'plugin', 'command', 'case'],
+        '/en/vuepress/': ['', 'file', 'plugin', 'theme/', 'command', 'case'],
         '/en/markdown/': ['', 'demo', 'emoji'],
         '/en/': ['', 'vuepress/', 'markdown/']
       },

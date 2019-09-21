@@ -2,7 +2,7 @@
  * @Author: Mr.Hope
  * @Date: 2019-07-05 00:14:26
  * @LastEditors: Mr.Hope
- * @LastEditTime: 2019-09-21 14:44:04
+ * @LastEditTime: 2019-09-21 16:26:31
  * @Description: Vuepress配置
  */
 
@@ -123,7 +123,7 @@ module.exports = {
         const moment = require('moment');
 
         moment.locale(lang);
-        return moment(timestamp).fromNow();
+        return moment(timestamp).format('LLL');
       }
     }],
 

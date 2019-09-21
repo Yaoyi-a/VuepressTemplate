@@ -11,5 +11,6 @@
 
 - [文件结构简介](file.md)
 - [插件](plugin.md)
+- [主题](theme/readme.md)
 - [使用指令](command.md)
 - [案例](case.md)
