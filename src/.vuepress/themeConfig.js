@@ -2,7 +2,7 @@
  * @Author: Mr.Hope
  * @Date: 2019-09-20 19:39:33
  * @LastEditors: Mr.Hope
- * @LastEditTime: 2019-09-20 20:03:19
+ * @LastEditTime: 2019-09-21 08:18:22
  * @Description: 主题配置文件
  */
 
@@ -10,22 +10,21 @@ module.exports = {
   /** 头部导航栏的配置 */
   nav: [
     { text: '主页', link: '/', icon: 'homefill' },
-    { text: 'Vuepress介绍', link: '/about.html', icon: 'infofill' },
+    { text: 'Vuepress介绍', link: '/vuepress/', icon: 'infofill' },
     { text: 'Markdown介绍', link: '/markdown/', icon: 'markdown' }
   ],
 
   /** 侧边栏配置 */
   sidebar: {
-    '/markdown/': [
-      '',
-      'demo',
-      'emoji'
-    ],
+    '/vuepress/': ['', 'file'],
+
+    '/markdown/': ['', 'demo', 'emoji'],
 
     // fallback
     '/': [
-      '',        /* / */
-      'about'    /* /about.html */
+      '',            /* / */
+      'vuepress/',   /* /vuepress/ */
+      'markdown/',   /* /markdown/ */
     ]
   },
 
@@ -56,14 +55,15 @@ module.exports = {
       /** 该语言下头部导航栏的配置 */
       nav: [
         { text: 'Home', link: '/en/', icon: 'homefill' },
-        { text: 'Vuepress', link: '/en/about.html', icon: 'infofill' },
+        { text: 'Vuepress', link: '/en/vuepress/', icon: 'infofill' },
         { text: 'Markdown', link: '/en/markdown/', icon: 'markdown' }
       ],
 
       /** 网站在该语言下的侧边栏 */
       sidebar: {
+        '/en/vuepress/': ['', 'file'],
         '/en/markdown/': ['', 'demo', 'emoji'],
-        '/en/': ['', 'about']
+        '/en/': ['', 'vuepress/', 'markdown/']
       },
 
       /** 多语言下拉菜单的标题 */

@@ -1,26 +1,84 @@
-# About Vuepress
+---
+title: File Structure
+---
 
-## Folder Description
+## File Structure
 
-### src folder
+```md
+.
+├── dist → Built Output
+│
+├── src
+│   ├── .vuepress (Optional) → Vuepress Config
+│   │   ├── components (Optional) → Components in this dir will be registered as global components
+│   │   │
+│   │   ├── theme (Optional) → Personal built Theme
+│   │   │   │
+│   │   │   ├── ... → See detail at 'Theme' part
+│   │   │   │
+│   │   │   └── Layout.vue → Website layout
+│   │   │
+│   │   ├── public (Optional) → Static resource dir
+│   │   │
+│   │   ├── styles (Optional) → Stores style related files
+│   │   │   ├── index.styl →  Automatically applied global style files
+│   │   │   └── palette.styl → override and set color constants
+│   │   │
+│   │   ├── templates (Optional, Config carefully) → Templates
+│   │   │   ├── dev.html → HTML template file for development environment
+│   │   │   └── ssr.html → Vue SSR based HTML template file in the built time
+│   │   │
+│   │   ├── config.js (Optional) → Entry file of configuration
+│   │   │
+│   │   └── enhanceApp.js (Optional) → App level enhancement
+│   │
+│   ├── readme.md → Mainpage
+│   ├── vuepress
+│   │   ├── file.md
+│   │   └── readme.md
+│   ├── markdown
+│   │   ├── emoji.md
+│   │   └── readme.md
+│   │
+│   └── en → English Folder
+│       ├── readme.md
+│       │
+│       ├── vuepress
+│       │   └── readme.md
+│       │
+│       └── markdown
+│           ├── emoji.md
+│           └── readme.md
+│
+├─── readme.md → Project default description
+├─── readme.en-US.md → Project English description
+│
+├── LICENSE → LICENSE File
+│
+├── package-lock.json → The structure of the package actually installed by the project
+└── package.json → Node.js declaration file for the entire project
+
+```
+
+## src folder
 
 The **source code** is placed in the `src` directory, in which all **markdown** files are rendered into **HTML**. That is the time when **readme.md** is rendered into **index.html**. In addition, Vuepress's configuration files are all placed in the `src/.vuepress` directory.
 
-### dist folder
+## dist folder
 
 The built code will be **output** to the **dist** directory, just upload it to the server you need to deploy.
 
 If you use an automated build tool, you **DONOT** need to perform the build locally after you turn on automatic deployment.。
 
-### package.json
+## package.json
 
 Node.js declaration file for the entire project, it is a file that must be included in the Node project. Contains information such as **project name**, **details**, **license**, and **packages** being used.
 
-### readme.md
+## readme.md
 
 Project documentation on Github.
 
-### Others
+## Others
 
 File that do not need to be understand at the beginning:
 
@@ -40,11 +98,11 @@ ESLint is a JS code linter.
 Beginners can use it in learning to reduce their own mistakes and develop a standardized code style. But you don't need to know the specific configuration method and working principle.
 :::
 
-### .vuepress
+## .vuepress
 
 The `.vuepress` folder should be placed directly in the source code directory. It contains the configuration options for Vuepress.
 
-#### config.js
+### config.js
 
 The configuration file for the project. For specific configuration instructions, please open the file to view the comments.
 
@@ -52,11 +110,11 @@ The configuration file for the project. For specific configuration instructions,
 For more details, please view[Vuepress Config](https://v1.vuepress.vuejs.org/config/)
 :::
 
-#### public folder
+### public folder
 
 A folder where other files on the site being placed. The files in the folder will be copied directly to the built directory when you build. Its content are usually resources that do not need to be imported using relative paths, such as icons for websites.
 
-#### style folder
+### style folder
 
 The style of the entire site is placed, where `index.styl` is the style file for the extra expansion of the entire site, and `palette.styl` is the color configuration of the entire site.
 
@@ -71,79 +129,3 @@ File that do not need to be understand at the beginning:
 | compoenents | Placed the Vue component in the Vuepress site       |
 | theme       | Placed the theme of the Vuepress site               |
 | templates   | Placed the template and layout of the Vuepress site |
-
-## Plugins
-
-- active-header-links: A plugin of automatically activating sidebar links when page scrolls
-- back-to-top: Add the Back-to-top button
-- google-analytics：Add Google analytics
-- last-updated: Update last edit time
-- medium-zoom: Picture Zoom
-- nprogress: progressbar based on nprogress
-- PWA: Support Progressive Web App
-- register-component: register components
-- search: Headers-based search plugin
-
-:::tip
-More configuration, please view[Vuepress Plugins](https://v1.vuepress.vuejs.org/plugin/)
-:::
-
-## Orders
-
-### Install Dependence
-
-```bash
-npm install
-```
-
-或
-
-```bash
-npm i
-```
-
-### Update Dependence
-
-```bash
-npm update
-```
-
-### Start Dev
-
-Open local develope environment, please visit[localhost:8080](http://localhost:8080)。
-
-```bash
-npm run serve
-```
-
-:::tip
-Use `Ctrl + C` to stop local dev process.
-:::
-
-### Build project
-
-Generate the files that will eventually be deployed to the server.
-
-```bash
-npm run build
-```
-
-## Cases
-
-- Case 1
-
-  [Blog Address](http://dong4j.info/)
-  [Source Code](https://github.com/dong4j/blog-resources)
-
-- Case 2
-
-  [Blog Address](https://davidangel.net/)
-  [Source Code](https://github.com/davidangel/davidangel-vuepress)
-
-- Case 3
-  
-  [Vue gallexy](https://vuepress.gallery/)
-
-## ThirdParty Theme
-
-- [vuepress-theme-reco](https://vuepress-theme-reco.recoluan.com/)
